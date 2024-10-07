@@ -1,3 +1,11 @@
+/* header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+} */
+
 .bg-beige {
     background-color: rgba(249, 246, 245, 1);
 }
