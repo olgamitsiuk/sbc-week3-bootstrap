@@ -11,10 +11,10 @@
 <body>
     <header class="container-fluid p-4">
         <div class="row align-items-center">
-            <div class="col-3 text-center fs-4 text">
-              <h2 class="fs-2 fw-bold">CosmeticBrand</h2>
+            <div class="col-6 col-lg-3 text-center d-flex justify-content-start">
+              <h2 class="">CosmeticBrand</h2>
             </div>
-        <ul class="col-6 nav justify-content-center">
+        <ul class="col-lg-6 nav d-none d-lg-flex justify-content-center">
             <li class="nav-item">
               <a class="nav-link text-dark" href="#">Home</a>
             </li>
@@ -28,7 +28,7 @@
                 <a class="nav-link text-dark" href="#">Contact us</a>
               </li>
           </ul>
-            <ul class="col-3 nav justify-content-center">
+            <ul class="col-6 col-lg-3 nav justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <img src="./assets/img/profile.png" alt="">
@@ -39,10 +39,16 @@
                         <img src="./assets/img/buy.png" alt="">
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="./assets/img/frame.png" alt="">
-                    </a>
+                <li class="d-lg-none nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                    <img src="./assets/img/frame.png" alt="">
+                  </a>
+                  <ul class="dropdown-menu rounded-0 border-0">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="#">Products</a></li>
+                    <li><a class="dropdown-item" href="#">About us</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
                 </li>
             </ul>
         </div>
@@ -54,10 +60,10 @@
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="col-5 carousel-caption d-none d-md-flex flex-column justify-content-center text-start top-0">
-                      <p class="fs-1 fw-semibold">Get Your Best Cosmetic Products Here</p> 
-                      <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                      <div class="input-group w-50 mt-4">
+                    <div class="col-6 col-lg-5 carousel-caption d-none d-md-flex flex-column justify-content-center text-start top-0 py-4">
+                      <h1 class="fw-semibold">Get Your Best Cosmetic Products Here</h1> 
+                      <p class="mt-lg-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="input-group w-75 w-lg-50 mt-2 mt-lg-4">
                         <input type="text" class="form-control rounded-0" placeholder="Search..." aria-label="Search">
                         <button class="btn btn-primary search-button rounded-0" type="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -65,9 +71,11 @@
                             </svg>
                         </button>
                     </div>
-                      <button type="button" class="btn w-25 btn-dark rounded-0 mt-5">Shop now</button>
+                    <div class="d-flex justify-content-start">
+                      <button type="button" class="btn btn-dark rounded-0 mt-4">Shop now</button>
                     </div>
-                    <img src="./assets/img/banner.png" class="col-6 offset-6 d-block" alt="...">
+                    </div>
+                    <img src="./assets/img/banner.png" class="col-6 offset-6 d-block style" alt="...">
                   </div>
                   <div class="carousel-item">
                     <div class="col-6 carousel-caption d-none d-md-block text-dark top-50 start-0 translate-middle-y">
@@ -96,10 +104,10 @@
         </section>
 
     <!-- Popular product -->
-        <section class="section container py-5 px-0 my-5">
+        <section class="section container py-lg-5 px-lg-0 my-5">
             <div class="row row-cols-1 row-cols-md-2 align-items-center my-5">
               <div class="col">
-                <h1 class="fs-1">Our Popular Product</h1>
+                <h1>Our Popular Product</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
               </div>
               <div class="col d-flex justify-content-md-end">
@@ -112,7 +120,7 @@
                 <div class="card h-100 border-light-subtle rounded-0">
                   <img src="./assets/img/pump-bottle.png" class="card-img-top rounded-0" alt="Cosmetic product">
                   <div class="card-body p-4">
-                    <h2 class="card-title fs-2">Cosmetic product</h2>
+                    <h2 class="card-title">Cosmetic product</h2>
                     <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                     <div class="d-flex justify-content-between align-items-center mt-5">
                       <div>
@@ -129,7 +137,7 @@
                 <div class="card h-100 border-light-subtle rounded-0">
                   <img src="./assets/img/jar.png" class="card-img-top rounded-0" alt="Cosmetic product">
                   <div class="card-body p-4">
-                    <h2 class="card-title fs-2">Cosmetic product</h2>
+                    <h2 class="card-title">Cosmetic product</h2>
                     <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                     <div class="d-flex justify-content-between align-items-center mt-5">
                       <div>
@@ -164,15 +172,18 @@
               </div>
           </section>
 
-          <section class="section container py-5 px-0 my-5">
+          <section class="section container py-lg-5 px-lg-0 my-5">
             <div class="row row-cols-1 row-cols-md-2 g-5 align-items-center">
               <div class="col">
-                <div class="card border-0 px-0">
+                <div class="card border-0 px-lg-0">
                   <div class="card-body">
                     <h1 class="card-title">The Perfect Beauty Of You</h1>
-                    <p class="card-text mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                    <p class="card-text mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                    <button type="button" class="btn w-25 btn-dark rounded-0 mt-5">Shop now</button>
+                    <p class="card-text mt-lg-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    
+                    <p class="card-text mt-lg-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <div class="d-flex justify-content-start">
+                      <button type="button" class="btn btn-dark rounded-0 mt-4">Shop now</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -182,13 +193,13 @@
           </div>
         </section>
 
-        <section class="section container py-5 px-0 my-5">
+        <section class="section container py-lg-5 px-lg-0 my-5">
           <div class="row row-cols-1 row-cols-md-2 g-5 align-items-start">
             <div class="col">
                 <img src="./assets/img/customer-photo.png" class="card-img-top rounded-0" alt="Cosmetic product">
             </div>
             <div class="col">
-              <div class="card border-0 px-0 py-5">
+              <div class="card border-0 px-lg-0 py-lg-5">
                 <div class="card-body">
                     <h3 class="card-title">Amazing Cosmetic</h3>
                     <div class="star-rating mb-4">
@@ -226,10 +237,10 @@
           </div>
           <div class="row py-5">
               <div class="col-md-4">
-                  <h2 class="fs-2 fw-bold">CosmeticBrand</h2>
+                  <h2>CosmeticBrand</h2>
                   <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
               </div>
-              <div class="col-md-3 offset-1">
+              <div class="col-md-3 offset-md-1">
                 <h5>Quick Link</h5>
                 <nav class="nav flex-column">
                   <a class="nav-link text-dark px-0" href="#">Home</a>
@@ -237,7 +248,7 @@
                   <a class="nav-link text-dark px-0" href="#">About us</a>
                 </nav>
               </div>
-              <div class="col-md-3 offset-1">
+              <div class="col-md-3 offset-md-1">
                   <h5 class="mb-3">Contact Us</h5>
                   <p>oyasimnaeem@email.com</p>
                   <p>+123456789</p>

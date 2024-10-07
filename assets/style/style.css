@@ -43,5 +43,19 @@
     color: #6c757d;
     margin-right: 1rem;
 }
+.dropdown-toggle::after {
+    display: none;
 
+}
+@media (max-width: 992px) {
+    h1 {
+        font-size: 1.8rem;
+    }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption {
+        left: 5%;
+    }
+}
