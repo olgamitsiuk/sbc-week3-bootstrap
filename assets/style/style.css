@@ -5,7 +5,9 @@
     background-color: #fff;
     z-index: 10;
 } */
-
+body { 
+    padding: 0;
+}
 .bg-beige {
     background-color: rgba(249, 246, 245, 1);
 }
@@ -55,6 +57,12 @@
     display: none;
 
 }
+.modal-open {
+    padding: 0;
+}
+.modal {
+    padding: 0;
+}
 @media (max-width: 992px) {
     h1 {
         font-size: 1.8rem;
@@ -65,5 +73,11 @@
     }
     .carousel-caption {
         left: 5%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    header .nav-link img {
+        width: 16px;
     }
 }
