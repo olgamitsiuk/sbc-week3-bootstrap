@@ -6,7 +6,7 @@ $(document).ready(function() {
     function() { $(this).removeClass('shadow-lg'); }
 );
     // add to card button efect
-  $('.card-body button:contains("Add to cart")').click(function(e) {
+  $('.add-to-cart').click(function(e) {
       e.preventDefault();
       $(this).html('<i class="bi bi-check"></i> Added').prop('disabled', true);
       setTimeout(() => {
@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
 
     // subscribe button efect
-    $('button:contains("Subscribe")').click(function(e) {
+    $('.subscribe').click(function(e) {
       e.preventDefault();
       var email = $(this).prev('input[type="email"]').val();
       if (email) {
@@ -44,11 +44,11 @@ $(document).ready(function() {
       });
 
       // buy now button functionality
-      $('.card-body button:contains("Buy now")').click(function(e) {
+      $('.buy-now').click(function(e) {
         e.preventDefault();
         var $button = $(this);
         var productName = $button.closest('.card-body').find('.card-title').text();
-        var productPrice = $button.closest('.card-body').find('.fs-4').text();
+        var productPrice = $button.closest('.card-body').find('.price').text();
 
         setTimeout(function() {
                 $('#quickCheckoutForm').submit(function(e) {
